@@ -13,10 +13,9 @@ router.get('/', withAuth, (req, res) => {
     },
     attributes: [
       'id',
-      'post_date',
+      'subject',
       'created_at',
-      'post_day',
-      'post_time'
+      'post_body'
     ],
     include: [
       {
@@ -59,10 +58,9 @@ router.get('/add/', withAuth, (req, res) => {
     },
     attributes: [
       'id',
-      'post_date',
+      'subject',
       'created_at',
-      'post_day',
-      'post_time'
+      'post_body'
     ],
     include: [
       {
@@ -104,10 +102,9 @@ router.get('/edit/:id', withAuth, (req, res) => {
     }, 
       attributes: [
         'id', 
-        'post_date',
+        'subject',
         'created_at',
-        'post_day',
-        'post_time'
+        'post_body'
       ],
       include: [
         {
