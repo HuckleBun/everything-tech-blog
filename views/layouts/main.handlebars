@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Tech Blog</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  <header class="hero">
+    <h1 id="techblog" class="app-title">Everything-Tech Blog</h1>
+    <nav class="navbar">
+      <ul>
+        {{#if loggedIn}}
+        <li class="li-inline nav-item"><a href="/">Home</a></li>
+        <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
+        <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+        {{else}}
+        <li class="li-inline nav-item"><a href="/login">Login</a></li>
+        {{/if}}
+      </ul>
+    </nav>
+  </header>
+
+  <main class="col-auto">
+    {{{body}}}
+  </main>
+
+  <footer class="blog-footer">
+    <p>&copy;
+    <script>document.write(new Date().getFullYear());</script> Everything-Tech Blog by <a href="https://www.linkedin.com/in/micah-duehring-b96997213/">Micah Duehring</a></p>
+  </footer>
+
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

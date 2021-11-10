@@ -1,0 +1,16 @@
+<div class="post mb-3">
+    <header class="post-header post-header-title">
+            <a href="/post/{{id}}">{{title}} </a>
+    </header>
+
+    <div class="post-body">
+        <div class="">
+            {{post_body}}
+        </div>
+        <div class="mt-3">
+            <b>{{user.username}}</b>
+            | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment"
+                comments.length}}</a>
+        </div>
+
+    </div>
