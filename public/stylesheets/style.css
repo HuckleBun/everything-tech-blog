@@ -163,6 +163,11 @@ input {
   background-color: var(--red);
 }
 
+.btn-signup:hover {
+  cursor: pointer;
+  background-color: var(--danger);
+}
+
 .btn-login:hover {
   cursor: pointer;
   background-color: var(--danger);
