@@ -7,7 +7,7 @@
       <input class="input" name="post-subject" type="text" value="{{post.subject}}" />
     </div>
     <div>
-      <label for="post-content" class="label">Post content:</label>
+      <label for="post-content" class="label">Content:</label>
       <input class="textarea" name="post-body" type="text" value="{{post.post_body}}" />
     </div>
     <div class="">
@@ -15,8 +15,8 @@
       |
       <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
     </div>
-    <button type="submit" class="btn-save">Save post</button>
-    <button id="delete-post" type="button" class="btn-del">Delete post</button>
+    <button type="submit" class="btn-save">Save</button>
+    <button id="delete-post" type="button" class="btn-del">Delete</button>
   </form>
 </article>
 
@@ -25,7 +25,6 @@
   <div class="mb-3 mx-10">{{> comments post.comments}}</div>
 </div>
 
-<script src=" /javascript/edit-post.js">
-</script>
+<script src=" /javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
 <script src="/javascript/comment.js"></script>
