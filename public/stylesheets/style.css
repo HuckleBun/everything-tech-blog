@@ -149,6 +149,20 @@ input {
   background-color: var(--red);
 }
 
+.btn-signup {
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 6px 5px;
+  width: 100%;
+  display: block;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  color: var(--white);
+  border: none;
+  outline: none;
+  background-color: var(--red);
+}
+
 .btn-login:hover {
   cursor: pointer;
   background-color: var(--danger);
@@ -288,6 +302,7 @@ footer {
   color: var(--white);
   background-color: var(--dark);
   padding: 1%;
+  border-radius: 5px;
 }
 
 .card-body {
@@ -299,7 +314,6 @@ footer {
 .post {
   margin-bottom: 1em;
   margin-top: 1em;
-  border: 1px ridge var(--gray);
 }
 
 .post a {

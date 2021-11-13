@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS tech_blog;
+DROP DATABASE IF EXISTS everything_tech_blog;
 
-CREATE DATABASE tech_blog;
+CREATE DATABASE everything_tech_blog;
