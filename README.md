@@ -12,7 +12,7 @@ A full web application that allows the user to create an account to post their o
 **Signup Page:**
 ![everything-tech-blog4](https://user-images.githubusercontent.com/62036600/141700837-acfc3054-9c6d-44bc-ab8e-e98dd31348b8.JPG)
 **Home Page:**
-![everything-tech-blog2](https://user-images.githubusercontent.com/62036600/141700726-07665eb0-042e-44f0-a73e4ec1be0ffee7.jpg)
+![everything-tech-blog2](https://user-images.githubusercontent.com/62036600/141700853-3aa46d07-bbd4-457e-acf5-b7946066b83b.jpg)
 **Dashboard:**
 ![everything-tech-blog](https://user-images.githubusercontent.com/62036600/141700672-047d3db2-8a2b-4ac6-aeff-495ce2e1615c.jpg)
 
