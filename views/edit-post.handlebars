@@ -1,19 +1,17 @@
 <article>
-  <h2 class="">Edit post</h2>
+  <h2 class="edit-post-title">Edit post</h2>
   <hr>
+  <div class="details">
+    Post made on {{format_date post.created_at}}
+  </div>
   <form id="edit-post-form" class="card-body">
     <div>
       <label for="post-subject" class="label">Subject:</label>
       <input class="input" name="post-subject" type="text" value="{{post.subject}}" />
     </div>
     <div>
-      <label for="post-content" class="label">Content:</label>
+      <label for="post-body" class="label">Content:</label>
       <input class="textarea" name="post-body" type="text" value="{{post.post_body}}" />
-    </div>
-    <div class="">
-      Created by you on {{format_date post.created_at}}
-      |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
     </div>
     <button type="submit" class="btn-save">Save</button>
     <button id="delete-post" type="button" class="btn-del">Delete</button>
@@ -22,7 +20,7 @@
 
 <div class="mb3">
   <h2 class="label">Comments</h2>
-  <div class="mb-3 mx-10">{{> comments post.comments}}</div>
+  <div class="mb-3 mt-3 mx-10">{{> comments post.comments}}</div>
 </div>
 
 <script src=" /javascript/edit-post.js"></script>

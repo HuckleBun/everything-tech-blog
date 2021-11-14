@@ -2,18 +2,18 @@
 {{> post-info post}}
 
 {{#if loggedIn}}
-<form id="new-comment-form">
+<form class="mt-3" id="new-comment-form">
   <div>
-    <textarea class="mx-10 w-50 h-200" name="comment-body"></textarea>
+    <textarea class="w-50 h-200"></textarea>
   </div>
 
   <div>
-    <button class="btn-save mx-10" type="submit">add comment</button>
+    <button class="btn-save" type="submit">add comment</button>
   </div>
   
 </form>
 {{/if}}
-<div class="mx-10 p">
+<div class=" p">
 {{> comments post.comments}}</div>
 
 {{#if loggedIn}}

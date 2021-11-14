@@ -178,14 +178,15 @@ input {
   text-decoration: none;
   width: 100%;
   display: block;
-  color: var(--light);
+  color: white;
   border: none;
   outline: none;
-  background-color: var(--indigo);
+  background-color: var(--dark);
 }
 
 .btn-up:hover, .btn-save {
-  background-color: green;
+  cursor: pointer;
+  background-color: var(--danger);
 }
 .btn-save, .btn-del {
   display: inline-block;
@@ -200,17 +201,21 @@ input {
   outline: none;
 }
 
-.btn-save:hover {
-  background-color: darkgreen;
+.btn-save {
+  background-color: rgb(15, 77, 15);
+}
 
+.btn-save:hover {
+  background-color: green;
 }
 
 .btn-del {
-  background-color: var(--red);
+  background-color: var(--danger);
 }
 
 .btn-del:hover {
-  background-color: var(--danger);
+  cursor: pointer;
+  background-color: rgb(150, 0, 0);
 }
 
 .btn-inline {
@@ -322,7 +327,7 @@ footer {
 }
 
 .post a {
-  color: var(--dark);
+  color: var(--white);
 }
 
 .post-header {
@@ -331,26 +336,27 @@ footer {
   padding: 1%;
 }
 
-.post-header:hover {
-  background-color: var(--gray);
-  color: var(--white);
-}
-
 .post-header a:hover {
-  color: var(--white);
+  color: white;
 }
 
 .post-body {
   padding: 1%;
-  color: var(--dark);
+  background-color: var(--gray);
 }
 
 .post-body a {
+  color: black;
   text-decoration: underline;
-  color: var(--blue);
 }
-.post-body a:hover {
-  color: var(--info);
+
+.details {
+  color: black;
+}
+
+.body-of-post {
+  font-weight: bold;
+  color: white;
 }
 
 .form-signin {
@@ -389,7 +395,6 @@ footer {
   color: var(--dark);
   font-weight: bold;
   display: flex;
-  justify-content: center;
   align-content: center;
 }
 

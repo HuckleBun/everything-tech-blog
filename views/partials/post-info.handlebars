@@ -4,10 +4,10 @@
     </header>
 
     <div class="post-body">
-        <div class="">
+        <div class="body-of-post">
             {{post_body}}
         </div>
-        <div class="mt-3">
+        <div class="mt-3 details">
             <b>{{user.username}}</b>
             | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment"
                 comments.length}}</a>
